@@ -12,7 +12,7 @@ config.initial_rows = 28
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 12
 
-config.color_scheme = "Gruvbox dark, hard (base16)"
+config.color_scheme = "Gruvbox Material (Gogh)"
 
 config.window_background_opacity = 0.8
 
@@ -58,5 +58,13 @@ config.unix_domains = {
 }
 
 config.default_gui_startup_args = { "connect", "unix" }
+
+config.ssh_domains = {
+	{
+		name = "ssh",
+		remote_address = "172.16.2.11",
+		username = "treyvon",
+	},
+}
 
 return config
